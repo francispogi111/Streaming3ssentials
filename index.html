@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Streaming</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body, h1, h2, h3, h4, p {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+    }
+
+    .w3-bar, .footer {
+      background-color: #242424;
+    }
+
+    .w3-bar a {
+      color: #f1f1f1;
+      text-decoration: none;
+    }
+
+    .w3-bar a:hover {
+      background-color: #888;
+      color: #fff;
+    }
+
+    .active {
+      background-color: transparent !important;
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      font-weight: 600;
+      color: #000;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    h3 {
+      font-size: 1.5em;
+      font-weight: 400;
+      color: #333;
+    }
+
+    p {
+      font-size: 1.2em;
+      font-weight: 300;
+      color: #666;
+    }
+
+    .section {
+      padding: 64px 32px;
+      margin: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: none;
+      opacity: 0;
+      animation: fadeIn 0.5s forwards;
+    }
+
+    .footer {
+      padding: 64px;
+      background-color: #242424;
+      color: #fff;
+      text-align: center;
+    }
+
+    .w3-bar-item i {
+      margin-right: 8px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    body {
+      animation: fadeIn 1s ease forwards;
+    }
+  </style>
+</head>
+<body>
+
+<div class="w3-bar w3-black w3-card">
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-wide" onclick="openTab(event, 'Home')">
+    <i class="fas fa-home"></i> HOME</a>
+  <div class="w3-right">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="openTab(event, 'About')">About</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="openTab(event, 'Types')">Types of Streaming</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="openTab(event, 'Platforms')">Platforms</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="openTab(event, 'Viewers')">Viewers Analysis</a>
+  </div>
+</div>
+
+<div id="Home" class="w3-container w3-padding-64 section" style="display: block;">
+  <h1 class="w3-center">Welcome to Streaming Essentials Website</h1>
+  <h3 class="w3-center">by group 1</h3>
+  <div class="w3-row-padding">
+    <p>We are delighted to have you visit our streaming information hub. This site will provide insights into the streaming world, from live broadcasting to on-demand content. Explore the various types of streaming, learn about popular platforms, and dive into viewer analysis to understand the current trends. Stay connected, stay informed, and enjoy the content we have curated just for you! Streaming has transformed how we consume media, and our goal is to guide you through this dynamic industry. Whether you're new to streaming or an experienced user, there's something here for everyone. Thank you for visiting, and we hope you enjoy your time on our website.</p>
+  </div>
+</div>
+
+<div id="About" class="w3-container w3-padding-64 section">
+  <h1 class="w3-center">About Streaming</h1>
+  <div class="w3-row-padding">
+    <p> Streaming refers to any media content – live or recorded – delivered to computers and mobile devices via the internet and played back in real time. </p>
+  </div>
+</div>
+
+<div id="Types" class="w3-container w3-padding-64 section">
+  <h1 class="w3-center">Types of Streaming Content</h1>
+  <div class="w3-row-padding">
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <h3>Podcasts</h3>
+      <p> The number of listeners to podcasts has increased dramatically in recent years. By 2023, the podcast market is predicted to have grown from $23.75 billion in 2023 to $130 billion. Podcasts allow for flexible content consumption, and genres like news, education, lifestyle have particularly high listener engagement.</p>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <h3>Live Streaming</h3>
+      <p> Large audiences are drawn to live streaming on websites like Twitch and Youtube, especially for gaming, lifestyle, and current events. Streamers such as Adin Ross, xQc, and KaiCenat routinely had average concurrent viewerships between 45k to 62k in 2023. One of the main factors influencing viewer loyalty is the interactive nature of live streaming, which enables broadcasters to communicate with their audiences in real time.</p>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <h3>Interviews</h3>
+      <p> Video platforms and podcasts both feature a lot of content that is based on interviews. Million of listeners hear interviews from podcasts like The Joe Rogan Experience and Armchair Expert. Due to its fascinating and intimate character, interviews account for a large share of podcasting sector, and listener growth is still observed in this format. </p>
+    </div>
+  </div>
+</div>
+
+<div id="Platforms" class="w3-container w3-padding-64 section">
+  <h1 class="w3-center">Platforms for Streaming</h1>
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <h3>YouTube</h3>
+      <p>YouTube is the largest video-sharing platform in the world, used for everything from vlogs and music videos to live streams and tutorials.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <h3>Twitch</h3>
+      <p>Twitch is focused primarily on gaming, but it's also a popular platform for live chat, interviews, and creative streams.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <h3>Facebook</h3>
+      <p>Facebook includes live streaming services, often used for events and community engagement.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <h3>Netflix</h3>
+      <p>Netflix is the leading subscription-based streaming platform for movies, TV shows, and documentaries.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <h3>TikTok</h3>
+      <p>TikTok offers live streaming and short-form video content, making it a popular choice for creative and real-time interactions.</p>
+    </div>
+  </div>
+</div>
+
+<div id="Viewers" class="w3-container w3-padding-64 section">
+  <h1 class="w3-center">Viewers Analysis by Streaming Category</h1>
+  <div class="w3-row-padding">
+    <div class="w3-col l6 w3-margin-bottom">
+      <h3>Interviews</h3>
+      <p>Interviews on platforms like YouTube continue to draw large viewership, especially when featuring influencers or celebrities. Adin Ross is known for drawing tens of thousands of live viewers to his interview streams due to his notable guests.</p>
+    </div>
+    <div class="w3-col l6 w3-margin-bottom">
+      <h3>Live Streaming</h3>
+      <p>Events like gaming competitions and live chats are huge draws. Influencers often pull in thousands of concurrent viewers during live streams, with streamers like xQc and KaiCenat routinely maintaining viewership between 45k and 62k in 2023.</p>
+    </div>
+    <div class="w3-col l6 w3-margin-bottom">
+      <h3>Podcasts</h3>
+      <p>The podcasting space continues to grow, with more than 62% of listeners tuning in to regular podcasts. The conversational nature of podcasts makes them a hit with people seeking news and entertainment.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openTab(evt, tabName) {
+    let i, x, tablinks;
+    x = document.getElementsByClassName("section");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    
+    document.getElementById(tabName).style.display = "block";
+
+    tablinks = document.getElementsByClassName("w3-bar-item");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove("active");
+    }
+
+    evt.currentTarget.classList.add("active");
+  }
+
+  window.onload = function() {
+    openTab(event, 'Home');
+  };
+</script>
+
+</body>
+</html>
